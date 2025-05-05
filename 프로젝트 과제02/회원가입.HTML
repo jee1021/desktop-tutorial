@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            height: 115vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#fafafa ;
+        }
+        .container{
+            width: 350px;
+            padding: 25px;
+            border:1px solid #dddddd;
+            box-shadow: 0 4px 11px rgba(0,0,0,0.05); 
+        }
+
+        .form-group{
+            margin-bottom: 16px;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="tel"], 
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            border: 5px sold #fcfcfc 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">회원가입</h1>
+        <form>
+            <div class="form-group">
+                <label>아이디</label>
+                <input type="text" placeholder="아이디">
+            </div>
+
+            <div class="form-group">
+                <label>비밀번호</label>
+                <input type="password" placeholder="비밀번호">
+            </div>
+
+            <div class="form-group">
+                <label>비밀번호 점검</label>
+                <input type="password" placeholder="비밀번호 점검">
+            </div>
+
+            <div class="form-group">
+                <label>이름</label>
+                <input type="name" placeholder="사용자 이름">
+            </div>
+
+            <div class="form-group">
+                <label>휴대폰 번호</label>
+                <input type="tel" placeholder="연락처">
+            </div>
+
+            <div class="form-group">
+                <label>성별</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">남자</label>
+                <input type="radio" name="gender" id="fmale">
+                <label for="female">여자</label>
+            </div>
+            
+            <div class="form-group">
+                <label>이메일</label>
+                <input type="email" placeholder="email">
+            </div>
+            <button class="btn btn-primary w-30" type="button">가입 완료</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
